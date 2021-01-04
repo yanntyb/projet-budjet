@@ -129,3 +129,24 @@ input:focus {
     font-size: 3rem;
     text-align: center;
 }
+
+@media screen and (max-width: 1400px){
+    .button{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .button{
+        font-size: 1rem;
+    }
+    #depense, #recette, #epargne {
+        width: 100%;
+    }
+    #resultat {
+        width: 50%;
+        position: relative;
+        left: 0;
+        height: min-content;
+    }
+}

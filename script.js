@@ -15,7 +15,7 @@ function checkButton(){
         let inputTab = document.getElementsByTagName("input");
         for(let value of inputTab){
             value.value = "";
-            value.style.border = "none"
+            value.style.border = "none";
         }
         document.getElementById("resultatSumm").innerHTML = "";
     })
@@ -34,10 +34,12 @@ function checkInputValue(){
                 value.placeholder.includes("Epargne")
             ){
                 somme += parseFloat(value.value);
+
             }
             else{
                 somme -= parseFloat(value.value);
             }
+            value.style.border = "none";
         }
         else if(value.value === "" || isNaN(parseInt(value.value))) {
             tabValueToPlace.push(value.placeholder)
