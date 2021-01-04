@@ -155,6 +155,9 @@ function definePdf(){
         };
         pdfMake.createPdf(docDef).open();
     }
+    else{
+        console.log("veuillez calculer le resultat avant impression")
+    }
 }
 
 checkButton();
